@@ -9,6 +9,7 @@ URL:		http://www.ivarch.com/programs/qsf.shtml
 BuildRequires:	libgdbm-devel
 BuildRequires:	MySQL-devel
 BuildRequires:	sqlite-devel
+Buildroot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Quick Spam Filter is a small, fast spam filter that works by learning to
