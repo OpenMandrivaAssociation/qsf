@@ -7,7 +7,7 @@ Group:		Networking/Mail
 Source0:	http://prdownloads.sourceforge.net/qsf/qsf-%{version}.tar.bz2
 URL:		http://www.ivarch.com/programs/qsf.shtml
 BuildRequires:	libgdbm-devel
-BuildRequires:	MySQL-devel
+BuildRequires:	mysql-devel
 BuildRequires:	sqlite-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-root
 
