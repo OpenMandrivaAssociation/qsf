@@ -1,7 +1,7 @@
 Summary:	Quick spam filter
 Name:		qsf
-Version:	1.2.6
-Release:	%mkrel 6
+Version:	1.2.7
+Release:	%mkrel 1
 License:	Artistic
 Group:		Networking/Mail
 Source0:	http://prdownloads.sourceforge.net/qsf/qsf-%{version}.tar.bz2
@@ -17,28 +17,23 @@ recognise the words that are more likely to appear in spam than non-spam. It is
 intended to be used in a procmail recipe to mark email as being possible spam.
 
 %prep
-
 %setup -q
 
 # this file gets eaten
 cp doc/quickref.txt doc/quickref.txt.bak
 
 %build
-
 %configure2_5x \
     --with-gdbm
-
 %make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot} 
-
+rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
-
 cp doc/quickref.txt.bak doc/quickref.txt
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot} 
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
