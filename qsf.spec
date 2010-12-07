@@ -1,7 +1,7 @@
 Summary:	Quick spam filter
 Name:		qsf
 Version:	1.2.7
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	Artistic
 Group:		Networking/Mail
 Source0:	http://prdownloads.sourceforge.net/qsf/qsf-%{version}.tar.bz2
