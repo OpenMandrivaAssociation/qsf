@@ -6,6 +6,11 @@ License:	Artistic
 Group:		Networking/Mail
 Source0:	http://prdownloads.sourceforge.net/qsf/qsf-%{version}.tar.bz2
 URL:		https://www.ivarch.com/programs/qsf.shtml
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libgdbm-devel
 BuildRequires:	mysql-devel
 BuildRequires:	sqlite-devel
